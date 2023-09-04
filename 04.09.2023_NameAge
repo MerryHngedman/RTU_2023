@@ -1,0 +1,15 @@
+import datetime
+
+# User Name
+name = input("Write your name: ")
+
+# Age
+age = int(input(f"Hi, {name}! How old are you? "))
+
+# Calculating the data when it turns one hundred years old
+current_year = datetime.date.today().year
+years_to_100 = 100 - age
+year_when_100 = current_year + years_to_100
+
+# Print 
+print(f"{name}, u'll be old and your teeth will fall out after '{years_to_100} years, in {year_when_100}.")
